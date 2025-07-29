@@ -3,199 +3,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Taylor Made Songs</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #fafafa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
             color: #333;
-        }
-        header {
-            background-image: url('https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            padding: 100px 20px;
-            color: white;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 0.3em;
-        }
-        header p {
-            font-size: 1.5em;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        section {
-            padding: 60px 20px;
+            line-height: 1.6;
             max-width: 900px;
             margin: auto;
+            padding: 20px;
         }
-        .testimonial, .pricing, .contact, .form {
-            margin-bottom: 50px;
+        header {
+            text-align: center;
+            padding: 40px 10px;
         }
-        .testimonial img, .pricing img {
-            width: 100%;
-            border-radius: 12px;
-            margin-top: 20px;
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4a2e8f;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        section {
+            margin-bottom: 40px;
         }
         h2 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
+            color: #4a2e8f;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d1c4e9;
+            padding-bottom: 5px;
         }
-        .quote {
-            background: #fff3cd;
-            padding: 20px;
-            border-left: 5px solid #ffc107;
+        .gallery, .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: 140px;
+            object-fit: cover;
             border-radius: 8px;
-            font-style: italic;
+            margin-bottom: 10px;
+            filter: brightness(90%);
         }
-        form input, form select, form textarea, form button {
+        audio {
             width: 100%;
-            padding: 12px;
-            margin: 10px 0;
+            outline: none;
+            margin-top: 10px;
+        }
+        .order-form input, .order-form select, .order-form textarea, .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             border-radius: 8px;
             border: 1px solid #ccc;
             font-size: 1em;
+            box-sizing: border-box;
         }
-        form button {
-            background-color: #5a2f8f;
+        .order-form button {
+            background-color: #4a2e8f;
             color: white;
             border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .order-form button:hover {
+            background-color: #3b2170;
         }
         footer {
-            background: #333;
-            color: #fff;
-            padding: 30px 20px;
             text-align: center;
+            color: #aaa;
+            padding: 20px 10px;
+            font-size: 0.9em;
+        }
+        a {
+            color: #4a2e8f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Let Me Sing Your Story</h1>
-    <p>From heartbreak to celebration – we turn your real moments into music.</p>
+    <h1>Taylor Made Songs</h1>
+    <p>Turning your stories into heartfelt songs, for memories that last a lifetime.</p>
 </header>
 
-<section class="testimonial">
-    <h2>Real Stories</h2>
-    <div class="quote">
-        “I cried when I heard the song they wrote about my dad. A voice, a melody, a memory I’ll never forget.” – Sarah, Manchester
+<section class="gallery">
+    <h2>Our Song Portfolio</h2>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Family memory">
+        <p><strong>A Song for My Late Granddad</strong><br>Beautiful and emotional. – Ellie ⭐⭐⭐⭐⭐</p>
     </div>
-    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=1050&q=80" alt="Sad memory moment">
-</section>
-
-<section class="testimonial">
-    <div class="quote">
-        “I gave the song as a gift to my wife. She plays it every day. Truly special.” – Liam, Swansea
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" alt="Wedding memory">
+        <p><strong>Wedding Day Surprise</strong><br>They turned our vows into a song. – Sam & Tara ⭐⭐⭐⭐⭐</p>
     </div>
-    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1050&q=80" alt="Happy family moment">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=600&q=80" alt="Dog memorial">
+        <p><strong>Song for Our Family Dog</strong><br>Played at his memorial. – Jack ⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Birthday family">
+        <p><strong>Birthday Song for Mum</strong><br>Most thoughtful gift ever. – Naomi ⭐⭐⭐⭐⭐</p>
+    </div>
 </section>
 
-<section class="pricing">
-    <h2>Pricing</h2>
-    <ul>
-        <li><strong>🎤 Vocal Recording Only:</strong> £50 – full vocal performance of your words</li>
-        <li><strong>🎵 Song + Lyrics:</strong> £60 – original lyrics & performance</li>
-    </ul>
-    <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=1050&q=80" alt="Songwriting">
+<section class="reviews">
+    <h2>What People Are Saying</h2>
+    <div class="card">
+        <p>“Absolutely beautiful. Made us all cry.” – Megan, York ⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="card">
+        <p>“A one-of-a-kind gift. My husband was speechless.” – Carla, Bristol ⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="card">
+        <p>“The lyrics said everything I couldn’t.” – Jake, Glasgow ⭐⭐⭐⭐⭐</p>
+    </div>
 </section>
 
-<section class="contact">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:steveleeprice77@gmail.com">steveleeprice77@gmail.com</a></p>
-    <p>Facebook: <a href="https://facebook.com/taylormadesongs" target="_blank">facebook.com/taylormadesongs</a></p>
+<section>
+    <h2>Listen to Alfie's Song</h2>
+    <audio controls>
+        <source src="alfie.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </section>
 
-<section class="form">
-    <h2>📝 Order Form</h2>
-    <form action="https://formspree.io/f/xanbjvjg" method="POST">
+<section>
+    <h2>Order Your Custom Song</h2>
+    <form action="https://formspree.io/f/xanbjvjg" method="POST" class="order-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" placeholder="What would you like your song to be about?" rows="5" required></textarea>
-        <select name="package">
+        <textarea name="message" rows="5" placeholder="Tell us your story" required></textarea>
+        <select name="package" required>
+            <option value="" disabled selected>Select a package</option>
             <option value="Vocal Recording (£50)">Vocal Recording (£50)</option>
             <option value="Song + Lyrics (£60)">Song + Lyrics (£60)</option>
         </select>
         <button type="submit">Send Order</button>
     </form>
-
-</section>
-
-
-<section class="gallery">
-    <h2>🎼 Song Portfolio</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-        <div class="poem">
-            <p><strong>“A song for my late granddad”</strong><br>
-            Beautiful, emotional, and made my nan cry. – Ellie ⭐⭐⭐⭐⭐</p>
-            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=1050&q=80" alt="Elderly tribute">
-        </div>
-        <div class="poem">
-            <p><strong>“Wedding day surprise”</strong><br>
-            They wrote our vows into a song. Unreal. – Sam & Tara ⭐⭐⭐⭐⭐</p>
-            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1050&q=80" alt="Wedding moment">
-        </div>
-        <div class="poem">
-            <p><strong>“Song for our family dog”</strong><br>
-            We played it at his memorial. Tears all around. – Jack ⭐⭐⭐⭐⭐</p>
-            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1050&q=80" alt="Dog remembrance">
-        </div>
-        <div class="poem">
-            <p><strong>“Birthday song for mum”</strong><br>
-            She said it was the most thoughtful gift she’s ever received. – Naomi ⭐⭐⭐⭐⭐</p>
-            <img src="https://images.unsplash.com/photo-1594824476967-48c8b9642732?auto=format&fit=crop&w=1050&q=80" alt="Birthday family moment">
-        </div>
-    </div>
-
-    <h2>🎼 Song Portfolio</h2>
-    <div class="poem">
-        <p><strong>“Thirteen Years with Alfie”</strong><br>
-        A heartfelt tribute to a beloved dog who shared a lifetime of memories.</p>
-        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1050&q=80" alt="Dog tribute">
-    </div>
-    <div class="poem">
-        <p><strong>“For My Daughter’s Wedding”</strong><br>
-        A gift from a proud dad to his little girl on the happiest day of her life.</p>
-        <img src="https://images.unsplash.com/photo-1594824476967-48c8b9642732?auto=format&fit=crop&w=1050&q=80" alt="Wedding tribute">
-    </div>
-    <div class="poem">
-        <p><strong>“The Day She Left”</strong><br>
-        A soft, sad song created to honour a mother’s memory.</p>
-        <img src="https://images.unsplash.com/photo-1542332213-9a1475e4a8b1?auto=format&fit=crop&w=1050&q=80" alt="Memory tribute">
-    </div>
-</section>
-
-
-<section class="testimonials-carousel">
-    <h2>💬 What People Say</h2>
-    <div class="poem">
-        <p><strong>"Absolutely beautiful. It made us all cry."</strong> – Megan, York</p>
-    </div>
-    <div class="poem">
-        <p><strong>"A one-of-a-kind gift. I’ve never seen my husband speechless."</strong> – Carla, Bristol</p>
-    </div>
-    <div class="poem">
-        <p><strong>"The lyrics said everything I couldn’t."</strong> – Jake, Glasgow</p>
-    </div>
-
-</section>
-
-<section class="audio-preview" style="max-width: 600px; margin: 40px auto; text-align: center;">
-    <h2>🎧 Listen to Alfie’s Song</h2>
-    <audio controls style="width: 100%;">
-        <source src="alfie.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <p>Experience the heartfelt tribute to Alfie through music.</p>
 </section>
 
 <footer>
-
     &copy; 2025 Taylor Made Songs. All rights reserved.
 </footer>
 
