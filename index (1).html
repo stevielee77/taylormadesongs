@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taylor Made Songs</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 3em;
+            background-color: rgba(255,255,255,0.8);
+        }
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            padding: 2em;
+        }
+        .collage img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .audio-sample, .founder {
+            background-color: rgba(255,255,255,0.9);
+            padding: 2em;
+            margin: 2em;
+            border-radius: 12px;
+        }
+        footer {
+            text-align: center;
+            margin: 2em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taylor Made Songs</h1>
+        <p>Let me sing your story – custom songs from the heart</p>
+    </header>
+
+    <section class="collage">
+        <img src="family1.jpg" alt="Family moment">
+        <img src="pet1.jpg" alt="Pet memory">
+        <img src="memory1.jpg" alt="Emotional photo">
+        <img src="family2.jpg" alt="Family moment">
+        <img src="pet2.jpg" alt="Pet memory">
+    </section>
+
+    <section class="audio-sample">
+        <h2>Sample Song – "Thirteen Years with Alfie"</h2>
+        <audio controls>
+            <source src="alfie_sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section class="founder">
+        <h2>Founder's Statement</h2>
+        <p>
+            I started Taylor Made Songs to help people hold onto the memories that matter most. Whether it's a beloved pet, a special person, or a story that deserves to be told in song – I'm here to bring it to life with love and care.
+        </p>
+        <p style="text-align:right;">– Steven Price</p>
+    </section>
+
+    <footer>
+        <p>Follow us on <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+    </footer>
+</body>
+</html>
