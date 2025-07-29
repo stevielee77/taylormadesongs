@@ -2,180 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
     <title>Taylor Made Songs</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
+            font-family: 'Georgia', serif;
+            background-image: url('background.jpg');
+            background-size: cover;
             color: #333;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
         }
         header {
             text-align: center;
-            padding: 40px 10px;
+            padding: 3em;
+            background-color: rgba(255,255,255,0.8);
         }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #4a2e8f;
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            padding: 2em;
         }
-        header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #4a2e8f;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #d1c4e9;
-            padding-bottom: 5px;
-        }
-        .gallery, .reviews {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .card {
-            background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-        }
-        .card img {
-            max-width: 100%;
-            height: 140px;
-            object-fit: cover;
+        .collage img {
+            width: 200px;
+            height: auto;
             border-radius: 8px;
-            margin-bottom: 10px;
-            filter: brightness(90%);
         }
-        audio {
-            width: 100%;
-            outline: none;
-            margin-top: 10px;
-        }
-        .order-form input, .order-form select, .order-form textarea, .order-form button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-            box-sizing: border-box;
-        }
-        .order-form button {
-            background-color: #4a2e8f;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .order-form button:hover {
-            background-color: #3b2170;
+        .audio-sample, .founder {
+            background-color: rgba(255,255,255,0.9);
+            padding: 2em;
+            margin: 2em;
+            border-radius: 12px;
         }
         footer {
             text-align: center;
-            color: #aaa;
-            padding: 20px 10px;
-            font-size: 0.9em;
-        }
-        a {
-            color: #4a2e8f;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            margin: 2em;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Taylor Made Songs</h1>
+        <p>Let me sing your story – custom songs from the heart</p>
+    </header>
 
-<header>
-    <h1>Taylor Made Songs</h1>
-    <p>Turning your stories into heartfelt songs, for memories that last a lifetime.</p>
-</header>
+    <section class="collage">
+        <img src="family1.jpg" alt="Family moment">
+        <img src="pet1.jpg" alt="Pet memory">
+        <img src="memory1.jpg" alt="Emotional photo">
+        <img src="family2.jpg" alt="Family moment">
+        <img src="pet2.jpg" alt="Pet memory">
+    </section>
 
-<section class="gallery">
-    <h2>Our Song Portfolio</h2>
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Family memory">
-        <p><strong>A Song for My Late Granddad</strong><br>Beautiful and emotional. – Ellie ⭐⭐⭐⭐⭐</p>
-    </div>
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" alt="Wedding memory">
-        <p><strong>Wedding Day Surprise</strong><br>They turned our vows into a song. – Sam & Tara ⭐⭐⭐⭐⭐</p>
-    </div>
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=600&q=80" alt="Dog memorial">
-        <p><strong>Song for Our Family Dog</strong><br>Played at his memorial. – Jack ⭐⭐⭐⭐⭐</p>
-    </div>
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Birthday family">
-        <p><strong>Birthday Song for Mum</strong><br>Most thoughtful gift ever. – Naomi ⭐⭐⭐⭐⭐</p>
-    </div>
-</section>
+    <section class="audio-sample">
+        <h2>Sample Song – "Thirteen Years with Alfie"</h2>
+        <audio controls>
+            <source src="alfie_sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
-<section class="reviews">
-    <h2>What People Are Saying</h2>
-    <div class="card">
-        <p>“Absolutely beautiful. Made us all cry.” – Megan, York ⭐⭐⭐⭐⭐</p>
-    </div>
-    <div class="card">
-        <p>“A one-of-a-kind gift. My husband was speechless.” – Carla, Bristol ⭐⭐⭐⭐⭐</p>
-    </div>
-    <div class="card">
-        <p>“The lyrics said everything I couldn’t.” – Jake, Glasgow ⭐⭐⭐⭐⭐</p>
-    </div>
-</section>
+    <section class="founder">
+        <h2>Founder's Statement</h2>
+        <p>
+            I started Taylor Made Songs to help people hold onto the memories that matter most. Whether it's a beloved pet, a special person, or a story that deserves to be told in song – I'm here to bring it to life with love and care.
+        </p>
+        <p style="text-align:right;">– Steven Price</p>
+    </section>
 
-<section>
-    <h2>Listen to Alfie's Song</h2>
-    <audio controls>
-        <source src="alfie.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</section>
-
-<section>
-    <h2>Order Your Custom Song</h2>
-    <form action="https://formspree.io/f/xanbjvjg" method="POST" class="order-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Tell us your story" required></textarea>
-        <select name="package" required>
-            <option value="" disabled selected>Select a package</option>
-            <option value="Vocal Recording (£50)">Vocal Recording (£50)</option>
-            <option value="Song + Lyrics (£60)">Song + Lyrics (£60)</option>
-        </select>
-        <button type="submit">Send Order</button>
-    </form>
-</section>
-
-<footer>
-    &copy; 2025 Taylor Made Songs. All rights reserved.
-</footer>
-
-
-<section style="margin-bottom: 50px; padding: 20px; background: #f0e6ff; border-radius: 10px; color: #4a2e8f;">
-    <h2>Founder’s Statement</h2>
-    <p>
-        At Taylor Made Songs, we believe everyone has a story worth singing. Whether it’s a tribute to a beloved pet, a celebration of a milestone, or a memory that needs to be cherished forever, our mission is to capture those emotions in beautiful, custom songs.
-    </p>
-    <p>
-        I started this journey because I’ve seen firsthand how powerful music can be in healing, remembering, and celebrating life. It’s my promise to pour heart and soul into every song, turning your stories into timeless keepsakes.
-    </p>
-    <p style="font-style: italic; text-align: right;">— Steven Price</p>
-</section>
-
+    <footer>
+        <p>Follow us on <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+    </footer>
 </body>
 </html>
