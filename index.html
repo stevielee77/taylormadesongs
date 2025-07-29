@@ -2,148 +2,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Taylor Made Songs</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+            background-color: #fafafa;
             color: #333;
-            text-align: center;
-            padding: 50px;
         }
         header {
-            padding: 50px 20px;
+            background-image: url('https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
         }
-        h1 {
+        header h1 {
             font-size: 3em;
             margin-bottom: 0.3em;
         }
-        p {
-            font-size: 1.3em;
-            margin-bottom: 2em;
-        }
-        a.button {
-            display: inline-block;
-            background-color: #5a2f8f;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.1em;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-        a.button:hover {
-            background-color: #3d1f63;
+        header p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 0 auto;
         }
         section {
-            margin-top: 60px;
-            padding: 20px;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
         }
-        .poem {
-            background: #ffffff88;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 40px;
+        .testimonial, .pricing, .contact, .form {
+            margin-bottom: 50px;
         }
-        iframe {
-            width: 90%;
-            max-width: 560px;
-            height: 315px;
-            margin: 20px 0;
+        .testimonial img, .pricing img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .quote {
+            background: #fff3cd;
+            padding: 20px;
+            border-left: 5px solid #ffc107;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        form input, form select, form textarea, form button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #5a2f8f;
+            color: white;
+            border: none;
         }
         footer {
-            margin-top: 60px;
-            font-size: 0.9em;
-            color: #666;
+            background: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Let Me Sing Your Story</h1>
-        <p>Custom songs with heartfelt lyrics and a voice that brings your memories to life.</p>
-        <a class="button" href="mailto:steveleeprice77@gmail.com">Order Your Song Now</a>
-    </header>
 
-    <section>
-        <h2>🎵 Sample Poems</h2>
-        <div class="poem">
-            <h3>Thirteen Years with Alfie</h3>
-            <p>
-                You came to us so small and wild<br>
-                A muddy paw, a fearless smile<br>
-                You'd chew the wellies by the door<br>
-                Then curl up warm upon the floor...
-            </p>
-        </div>
-        <div class="poem">
-            <h3>My Bevs</h3>
-            <p>
-                You pulled me from my darkest days<br>
-                Accepted my son in every way<br>
-                With Caitlin, Brooklyn by your side<br>
-                You've been my rock, my hope, my pride...
-            </p>
-        </div>
-    </section>
+<header>
+    <h1>Let Me Sing Your Story</h1>
+    <p>From heartbreak to celebration – we turn your real moments into music.</p>
+</header>
 
-    <section>
-        <h2>💬 What People Are Saying</h2>
-        <div class="poem">
-            <p><strong>“I cried when I heard the song they wrote about my dad. It was perfect.”</strong><br>– Sarah, Manchester</p>
-        </div>
-        <div class="poem">
-            <p><strong>“Bev’s voice and the lyrics captured everything I felt but couldn’t say. Thank you.”</strong><br>– Jason, Cardiff</p>
-        </div>
-        <div class="poem">
-            <p><strong>“I gave the song as a gift to my wife. She plays it every day. Truly special.”</strong><br>– Liam, Swansea</p>
-        </div>
-    </section>
+<section class="testimonial">
+    <h2>Real Stories</h2>
+    <div class="quote">
+        “I cried when I heard the song they wrote about my dad. A voice, a melody, a memory I’ll never forget.” – Sarah, Manchester
+    </div>
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1050&q=80" alt="Sad memory moment">
+</section>
 
-    <section>
-        <h2>💸 Pricing</h2>
-        <div class="poem">
-            <p><strong>🎤 Vocal Recording Only:</strong> £50<br>
-            Includes a fully produced vocal performance</p>
-        </div>
-        <div class="poem">
-            <p><strong>🎵 Song + Lyrics:</strong> £60<br>
-            Includes a custom-written poem turned into lyrics and recorded</p>
-        </div>
-    </section>
+<section class="testimonial">
+    <div class="quote">
+        “I gave the song as a gift to my wife. She plays it every day. Truly special.” – Liam, Swansea
+    </div>
+    <img src="https://images.unsplash.com/photo-1613363091528-1f7d0f3f8076?auto=format&fit=crop&w=1050&q=80" alt="Happy family moment">
+</section>
 
-    <section>
-        <h2>📬 Contact Me</h2>
-        <div class="poem">
-            <p>Email: <a href="mailto:steveleeprice77@gmail.com">steveleeprice77@gmail.com</a><br>
-            Facebook: <a href="https://facebook.com/taylormadesongs" target="_blank">facebook.com/taylormadesongs</a></p>
-        </div>
-    </section>
+<section class="pricing">
+    <h2>Pricing</h2>
+    <ul>
+        <li><strong>🎤 Vocal Recording Only:</strong> £50 – full vocal performance of your words</li>
+        <li><strong>🎵 Song + Lyrics:</strong> £60 – original lyrics & performance</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=1050&q=80" alt="Songwriting">
+</section>
 
-    <section>
-        <h2>📝 Order Form</h2>
-        <div class="poem">
-            <form action="https://formspree.io/f/xanbjvjg" method="POST">
-                <p><label>Your Name:<br><input type="text" name="name" required></label></p>
-                <p><label>Your Email:<br><input type="email" name="_replyto" required></label></p>
-                <p><label>What would you like your song to be about?<br>
-                <textarea name="message" rows="6" required></textarea></label></p>
-                <p><label>Preferred Package:<br>
-                <select name="package">
-                    <option value="Vocal Recording (£50)">Vocal Recording (£50)</option>
-                    <option value="Song + Lyrics (£60)">Song + Lyrics (£60)</option>
-                </select></label></p>
-                <p><button type="submit">Send Order</button></p>
-            </form>
-            <p>You’ll receive a confirmation email with payment instructions shortly.</p>
-        </div>
-    </section>
+<section class="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:steveleeprice77@gmail.com">steveleeprice77@gmail.com</a></p>
+    <p>Facebook: <a href="https://facebook.com/taylormadesongs" target="_blank">facebook.com/taylormadesongs</a></p>
+</section>
 
-    <footer>
-        © 2025 Taylor Made Songs. All rights reserved.
-    </footer>
+<section class="form">
+    <h2>📝 Order Form</h2>
+    <form action="https://formspree.io/f/xanbjvjg" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="What would you like your song to be about?" rows="5" required></textarea>
+        <select name="package">
+            <option value="Vocal Recording (£50)">Vocal Recording (£50)</option>
+            <option value="Song + Lyrics (£60)">Song + Lyrics (£60)</option>
+        </select>
+        <button type="submit">Send Order</button>
+    </form>
+
+</section>
+
+<section class="gallery">
+    <h2>🎼 Song Portfolio</h2>
+    <div class="poem">
+        <p><strong>“Thirteen Years with Alfie”</strong><br>
+        A heartfelt tribute to a beloved dog who shared a lifetime of memories.</p>
+        <img src="https://images.unsplash.com/photo-1601758123927-196c9a9a1c4c?auto=format&fit=crop&w=1050&q=80" alt="Dog tribute">
+    </div>
+    <div class="poem">
+        <p><strong>“For My Daughter’s Wedding”</strong><br>
+        A gift from a proud dad to his little girl on the happiest day of her life.</p>
+        <img src="https://images.unsplash.com/photo-1521510898047-1c0db3a87d94?auto=format&fit=crop&w=1050&q=80" alt="Wedding tribute">
+    </div>
+    <div class="poem">
+        <p><strong>“The Day She Left”</strong><br>
+        A soft, sad song created to honour a mother’s memory.</p>
+        <img src="https://images.unsplash.com/photo-1504199360342-5c76b7a2abef?auto=format&fit=crop&w=1050&q=80" alt="Memory tribute">
+    </div>
+</section>
+
+
+<section class="audio-preview">
+    <h2>🎧 Listen to a Sample</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <p>Here’s a sample of how your story could sound.</p>
+</section>
+
+<section class="testimonials-carousel">
+    <h2>💬 What People Say</h2>
+    <div class="poem">
+        <p><strong>"Absolutely beautiful. It made us all cry."</strong> – Megan, York</p>
+    </div>
+    <div class="poem">
+        <p><strong>"A one-of-a-kind gift. I’ve never seen my husband speechless."</strong> – Carla, Bristol</p>
+    </div>
+    <div class="poem">
+        <p><strong>"The lyrics said everything I couldn’t."</strong> – Jake, Glasgow</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Taylor Made Songs. All rights reserved.
+</footer>
+
 </body>
 </html>
