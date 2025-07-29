@@ -7,7 +7,7 @@
     <style>
         body { margin: 0; font-family: 'Georgia', serif; background: #eef6fa; color: #333;}
         header { text-align: center; padding: 3em 1em 1em 1em; background: linear-gradient(120deg,#87ceeb 60%,#fff 100%);}
-        .collage { display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; padding: 2em 1em; }
+        .collage { display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; padding: 2em 1em 1em 1em; }
         .testimonial-card { 
             background: #fff; box-shadow: 0 4px 24px #0001; border-radius: 16px; width: 260px; 
             display: flex; flex-direction: column; align-items: center; padding: 1em 1em 1.5em 1em; 
@@ -16,9 +16,7 @@
         .testimonial-card img { 
             width: 220px; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 1em; box-shadow:0 2px 12px #0002;
         }
-        .testimonial { 
-            font-size: 1.05em; margin-bottom: 0.8em; color: #265589;
-        }
+        .testimonial { font-size: 1.05em; margin-bottom: 0.8em; color: #265589;}
         .testimonial-from { font-size: .93em; color: #444; font-style: italic;}
         .audio-sample, .founder {
             background: #f8fafd;
@@ -28,10 +26,61 @@
             max-width: 620px;
             box-shadow: 0 2px 12px #0001;
         }
+        .order-form-section {
+            background: #fffefa;
+            border: 2px solid #f8e1e3;
+            box-shadow: 0 8px 36px #e5bfc04d;
+            padding: 2.2em 2em 2em 2em;
+            margin: 2em auto 1em auto;
+            border-radius: 20px;
+            max-width: 440px;
+            text-align: center;
+            position: relative;
+        }
+        .order-form-section .icon-heart {
+            font-size: 2.2em; color: #e06a84; margin-bottom: 0.3em; display:inline-block;
+        }
+        .order-form-section h2 { margin-top: 0; color: #e06a84; }
+        form label { font-weight: bold; display: block; margin: 1.1em 0 0.28em 0; text-align: left;}
+        form input, form textarea, form select {
+            width: 100%; padding: 0.95em; border-radius: 10px; border: 1.5px solid #f5c2d3; font-family: inherit; font-size:1.05em; margin-bottom: 1em;
+            background: #fdf6f8;
+        }
+        form button {
+            background: linear-gradient(90deg, #e06a84 60%, #f8e1e3 120%); color: #fff; border: none; padding: 1.15em 2.1em; border-radius: 12px;
+            font-size: 1.13em; cursor: pointer; transition: background 0.18s; margin-top: 1.3em; letter-spacing: 1px;
+            box-shadow: 0 2px 12px #e06a8444;
+        }
+        form button:hover { background: #ca5c76;}
+        .form-note { font-size: 1em; color: #a06982; margin-bottom:1.1em;}
+        .privacy { color:#555; font-size: .93em; margin-bottom: 0.7em; font-style:italic;}
+        .pay-section {margin:2.1em 0 0.7em 0;}
+        .pay-title {font-weight:bold;font-size:1.13em;margin-bottom:0.8em;color:#2e7bbd;}
+        .pay-btns {display:flex; flex-direction:column; gap:1.1em; align-items:center; margin-bottom: 1.2em;}
+        .paypal-form input[type="submit"] {
+            padding: 1em 2.2em; background: #ffc439; color: #111; border: none;
+            border-radius: 8px; font-size:1.07em; font-weight:bold; cursor:pointer;
+            box-shadow: 0 2px 12px #ffc43933; transition:background 0.12s;
+        }
+        .paypal-form input[type="submit"]:hover { background:#ffb300; }
+        .paypal-desc {font-size:0.98em; color:#6b5462; margin-bottom:0.2em;}
+        .payinfo {
+            margin:1.3em 0 0.5em 0; padding:1.1em 0.9em; background:#f8e1e3;
+            color:#772c1e; border-radius:13px; font-size:1.12em;
+            font-weight:bold; letter-spacing:.02em;
+        }
+        .facebook-btn {
+            display:inline-block; margin:1.1em 0 0.2em 0; padding:1em 2em;
+            background: #1877f2; color: #fff; font-size: 1.14em; font-weight: bold;
+            border-radius: 10px; text-decoration: none; box-shadow: 0 2px 12px #1877f249;
+            letter-spacing: 1px; transition:background 0.14s;
+        }
+        .facebook-btn:hover { background: #155abb; }
         footer { text-align: center; margin: 2em; font-style: italic; color: #888;}
         @media (max-width:900px){
             .collage{flex-direction:column; align-items:center;}
             .testimonial-card{width:96vw; min-height:350px;}
+            .audio-sample, .founder, .order-form-section {max-width:97vw;}
         }
     </style>
 </head>
@@ -72,6 +121,77 @@
         </div>
     </div>
 
+    <section class="order-form-section">
+        <span class="icon-heart">&#10084;&#65039;</span>
+        <h2>Order Your Own Song</h2>
+        <div class="form-note">
+            Let me write your story in song.<br>
+            Fill in the form below, and I’ll be in touch to create something unique for you or your loved one.
+        </div>
+        <div class="privacy">Your details are safe &amp; never shared.</div>
+        <form action="https://formspree.io/f/xnnzvyrk" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Who or what is the song about?</label>
+            <input type="text" id="subject" name="subject" placeholder="My dad, my best friend, my dog, etc." required>
+
+            <label for="message">Your special message or story</label>
+            <textarea id="message" name="message" rows="4" placeholder="Share your story or any details you'd like included" required></textarea>
+
+            <label for="referral">How did you hear about us?</label>
+            <select id="referral" name="referral">
+                <option value="">Select...</option>
+                <option value="Facebook">Facebook</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Friend">Friend/Family</option>
+                <option value="Google">Google</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Send My Song Request</button>
+        </form>
+
+        <div class="pay-section">
+            <div class="pay-title">Or Buy Instantly:</div>
+            <div class="pay-btns">
+                <div>
+                    <div class="paypal-desc">Custom Song – £50</div>
+                    <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                      <input type="hidden" name="cmd" value="_xclick">
+                      <input type="hidden" name="business" value="steveleeprice77@gmail.com">
+                      <input type="hidden" name="item_name" value="Taylor Made Custom Song">
+                      <input type="hidden" name="currency_code" value="GBP">
+                      <input type="hidden" name="amount" value="50.00">
+                      <input type="submit" value="Buy Custom Song – £50">
+                    </form>
+                </div>
+                <div>
+                    <div class="paypal-desc">Custom Song + Downloadable Lyrics – £60</div>
+                    <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                      <input type="hidden" name="cmd" value="_xclick">
+                      <input type="hidden" name="business" value="steveleeprice77@gmail.com">
+                      <input type="hidden" name="item_name" value="Taylor Made Song + Downloadable Lyrics">
+                      <input type="hidden" name="currency_code" value="GBP">
+                      <input type="hidden" name="amount" value="60.00">
+                      <input type="submit" value="Buy Song + Lyrics – £60">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="payinfo">
+            Or pay manually: send your amount to PayPal: <b>steveleeprice77@gmail.com</b>
+        </div>
+
+        <a href="https://www.facebook.com/profile.php?id=61561834282863" target="_blank" class="facebook-btn">
+            Visit Us on Facebook
+        </a>
+    </section>
+
     <section class="audio-sample">
         <h2>Sample Song – "Thirteen Years with Alfie"</h2>
         <audio controls>
@@ -89,7 +209,7 @@
     </section>
 
     <footer>
-        <p>Follow us on <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/profile.php?id=61561834282863" target="_blank">Facebook</a></p>
     </footer>
 </body>
 </html>
